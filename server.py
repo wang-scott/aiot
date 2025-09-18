@@ -113,8 +113,8 @@ def capture_image():
         # 在預測完成後
         category_counts[class_num] += 1
         history_log[class_num].append(category_counts[class_num])
-
-        return 2, 200
+        
+        return str(class_num), 200
     else:
         return "Failed to capture", 500
 
